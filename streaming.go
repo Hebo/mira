@@ -125,7 +125,7 @@ func (c *Reddit) streamSubredditPosts(name string) (*SubmissionStream, error) {
 			} else if len(posts) > 2 {
 				last = posts[1].GetID()
 			}
-			time.Sleep(45 * time.Second)
+			time.Sleep(5 * time.Second)
 		}
 	}()
 	return s, nil
